@@ -2,6 +2,10 @@ import express from "express";
 const app = express();
 const PUERTO = 8080;
 
+//Middleware
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
 //rutas
 app.get("/", (req, res) => {
     res.send("Conectado al servidor")
@@ -9,5 +13,5 @@ app.get("/", (req, res) => {
 
 //listen
 app.listen(PUERTO, () => {
-    console.log("Escuchando en el puerto " + PUERTO);
+    console.log(`Conectado a http://localhost:${PUERTO}`);
 })
