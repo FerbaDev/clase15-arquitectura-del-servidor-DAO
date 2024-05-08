@@ -1,8 +1,9 @@
 import MemoryJugueteDao from "../dao/memoryJugueteDao.js";
 import MongoJugueteDao from "../dao/mongoJugueteDao.js";
+import FileSystemJugueteDao from "../dao/filesystemJuguetDao.js";
 //const jugueteService = new MemoryJugueteDao();
-const jugueteService = new MongoJugueteDao();
-
+//const jugueteService = new MongoJugueteDao();
+const jugueteService = new FileSystemJugueteDao();
 //el controlador es el que manipula las peticiones HTTP
 //recibe los datos de la request, dar las respuestas del servidor
 // y mostrar los mensajes

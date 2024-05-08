@@ -10,6 +10,7 @@ acomodando dao en controller ----------------- 00:37
 probando en postman -------------------------- 00:40  
 dao para mongo DB ---------------------------- 00:41  
 acomodando en controller para dao mongo db --- 00:47  
+file system juguete Dao ---------------------- 00:51  
 
 
 
@@ -21,5 +22,5 @@ acomodando en controller para dao mongo db --- 00:47
 
 
 
-dejé en 00:31
+dejé en 01:14
 () => {}
