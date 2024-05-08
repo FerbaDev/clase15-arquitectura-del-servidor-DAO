@@ -1,5 +1,5 @@
-import MemoruJugueteDao from "../dao/memoryJugueteDao.js";
-const jugueteService = new MemoruJugueteDao();
+import MemoryJugueteDao from "../dao/memoryJugueteDao.js";
+const jugueteService = new MemoryJugueteDao();
 //el controlador es el que manipula las peticiones HTTP
 //recibe los datos de la request, dar las respuestas del servidor
 // y mostrar los mensajes

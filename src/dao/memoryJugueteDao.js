@@ -1,9 +1,9 @@
-class MemoruJugueteDao {
+class MemoryJugueteDao {
     constructor() {
         this.juguetes = [];
     }
 
-    async addJuguetes(datosJuguete) {
+    async addJuguete(datosJuguete) {
         try {
             this.juguetes.push(datosJuguete);
             return datosJuguete;
@@ -12,7 +12,7 @@ class MemoruJugueteDao {
         }
     }
 
-    async getJugeuete() {
+    async getJuguetes() {
         try {
             return this.juguetes;
         } catch (error) {
@@ -21,4 +21,4 @@ class MemoruJugueteDao {
     }
 }
 
-export default MemoruJugueteDao;
+export default MemoryJugueteDao;
