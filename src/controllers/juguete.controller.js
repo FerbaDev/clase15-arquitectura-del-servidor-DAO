@@ -1,13 +1,14 @@
+import MemoruJugueteDao from "../dao/memoryJugueteDao.js";
+const jugueteService = new MemoruJugueteDao();
 //el controlador es el que manipula las peticiones HTTP
 //recibe los datos de la request, dar las respuestas del servidor
 // y mostrar los mensajes
 
-
 class JugueteController {
-    async crearJuguete(req, res) {
+    async addJuguete(req, res) {
         try {
             //traemos el metodo desde el servicio
-            const juguete = await jugueteService.crearJuguete(req.body); 
+            const juguete = await jugueteService.addJuguete(req.body); 
             res.json(juguete);
         } catch (error) {
             res.status(500).send("Error del servidor"); 
@@ -15,9 +16,9 @@ class JugueteController {
         }
     }
 
-    async obtenerJuguetes(req, res) {
+    async getJuguetes(req, res) {
         try {
-        const juguetes = await jugueteService.obtenerJuguetes();
+        const juguetes = await jugueteService.getJuguetes();
         res.json(juguetes);
             
         } catch (error) {
