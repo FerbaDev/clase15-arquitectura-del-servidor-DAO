@@ -15,6 +15,7 @@
 
 import DAO from "../dao/factory.js";
 const jugueteService = new DAO(); 
+import JugueteDTO from "../dto/juguete.dto.js";
 
 class JugueteController {
     async addJuguete(req, res) {
