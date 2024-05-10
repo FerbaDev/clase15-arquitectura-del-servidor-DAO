@@ -12,6 +12,12 @@ dao para mongo DB ---------------------------- 00:41
 acomodando en controller para dao mongo db --- 00:47  
 file system juguete Dao ---------------------- 00:51  
 
+## Patrón de diseño factory  
+
+iniciando factory ---------------------------- 01:17  
+config de dotenv ----------------------------- 01:19  
+factory.js ----------------------------------- 01:21  
+cambiando juguete controller ----------------- 01:26  
 
 
 

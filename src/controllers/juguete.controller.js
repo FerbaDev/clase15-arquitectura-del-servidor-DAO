@@ -1,12 +1,20 @@
-import MemoryJugueteDao from "../dao/memoryJugueteDao.js";
-import MongoJugueteDao from "../dao/mongoJugueteDao.js";
-import FileSystemJugueteDao from "../dao/filesystemJuguetDao.js";
+//Acá traemos el DAO. 
+//SIN FACTORY: 
+
+// import MemoryJugueteDao from "../dao/memoryJugueteDao.js";
+// import MongoJugueteDao from "../dao/mongoJugueteDao.js";
+// import FileSystemJugueteDao from "../dao/filesystemJuguetDao.js";
 //const jugueteService = new MemoryJugueteDao();
 //const jugueteService = new MongoJugueteDao();
-const jugueteService = new FileSystemJugueteDao();
+//const jugueteService = new FileSystemJugueteDao();
 //el controlador es el que manipula las peticiones HTTP
 //recibe los datos de la request, dar las respuestas del servidor
 // y mostrar los mensajes
+
+//CON FACTORY: 
+
+import DAO from "../dao/factory.js";
+const jugueteService = new DAO(); 
 
 class JugueteController {
     async addJuguete(req, res) {
