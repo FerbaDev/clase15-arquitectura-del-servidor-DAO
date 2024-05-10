@@ -19,9 +19,19 @@ config de dotenv ----------------------------- 01:19
 factory.js ----------------------------------- 01:21  
 cambiando juguete controller ----------------- 01:26  
 
+## DTO
 
+juguete.dto.js ------------------------------- 01:43  
+cambios en juguete controller ---------------- 01:45  
+explicacion de dto para la 3era preentrega --- 01:48  
 
+## Patrón Repository  
 
+el repositorio se puede conectar directamente con la base de datos.
+los controladores se conectan al repositorio.
+las rutas se conectan a los controladores.
+ explicacion de 3era preentrega -------------- 01:56  
+ 
 
 
 

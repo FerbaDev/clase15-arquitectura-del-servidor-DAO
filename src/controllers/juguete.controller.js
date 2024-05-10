@@ -19,10 +19,13 @@ import JugueteDTO from "../dto/juguete.dto.js";
 
 class JugueteController {
     async addJuguete(req, res) {
+        const {nombre, categoria, precio} = req.body;
         try {
             //traemos el metodo desde el servicio
-            const juguete = await jugueteService.addJuguete(req.body); 
-            res.json(juguete);
+            //const juguete = await jugueteService.addJuguete(req.body); 
+            const jugueteDTO = new JugueteDTO(nombre, categoria, precio);
+            await jugueteService.addJuguete(jugueteDTO); 
+            res.json(jugueteDTO);
         } catch (error) {
             res.status(500).send("Error del servidor"); 
             
